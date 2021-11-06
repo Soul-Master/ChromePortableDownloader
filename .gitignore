@@ -1,0 +1,5 @@
+/Chrome
+/node_modules
+/.vs
+/build
+/package-lock.json

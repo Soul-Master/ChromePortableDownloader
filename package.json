@@ -1,0 +1,17 @@
+{
+  "name": "ChromePortableDownloader",
+  "version": "1.0.0",
+  "description": "ChromeDownloader",
+  "main": "index.js",
+  "type": "module",
+  "author": {
+    "name": "Soul_Master"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "git clean -dfx"
+  },
+  "devDependencies": {
+    "typescript": "~4.4.4"
+  }
+}

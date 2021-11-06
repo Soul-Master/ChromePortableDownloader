@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <link rel="icon" type="image/svg" href="./images/chrome-logo.svg" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Google+Sans:400,500|Roboto+Mono:wght@300;400;700|Product+Sans:400&amp;lang=en&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css" />
+    <title>Download Chrome portable from Google server</title>
+</head>
+<body>
+    <section id="filterSection">
+        <div id="channelFilter" class="filter">
+            <label for="channelSelect">Channel</label>
+            <select id="channelSelect">
+                <option value="stable">Stable (every 4 weeks)</option>
+                <option value="beta">Beta (1 month ahead)</option>
+                <option value="dev">Dev (once or twice weekly)</option>
+                <option value="canary">Canary (updates daily)</option>
+            </select>
+        </div>
+        <div id="platformFilter" class="filter">
+            <label for="platformSelect">Platform</label>
+            <select id="platformSelect">
+                <option value="win64">Windows x64</option>
+            </select>
+        </div>
+        <div id="versionFilter" class="filter">
+            <label>Version Prefix (Optional)</label>
+            <input id="versionPrefixTextbox" type="text" placeholder="major.minor.patch.build" maxlength="15" />
+        </div>
+        <div id="filterButtonContainer">
+            <button id="checkUpdateButton">Check Update</button>
+        </div>
+        <div id="resultContainer"></div>
+    </section>
+
+    <script src="./build/index.js" type="module"></script>
+</body>
+</html>
