@@ -55,5 +55,8 @@ Beta channel https://www.google.com/chrome/beta/?standalone=1<br/>
 Dev channel https://www.google.com/chrome/dev/?standalone=1<br/>
 Canary channel https://www.google.com/chrome/canary/?standalone=1<br/>
 
+### Can I create portable Chrome from regular installer?
+Yes. However, there is no straightforward way to extract Chrome folder from regular installer. You need to install it before copy Chrome folder.
+
 [^1]: With official Chrome launcher, you can open only one version of Chrome at the same time (including other portable Chrome application). It means you need to close all Chrome instances before open Chrome portable application.<br/><br/>
 If this limitation doesn't work for you, please use custom launcher instead. But it also come with their our risk because you need to open application from unknown developer or sign by small company.
