@@ -13,7 +13,9 @@ async function onLoad() {
     const params = new URLSearchParams(location.search);
     platformSelect.value = (params.get('platform') || 'win64').toLowerCase();
     channelSelect.value = (params.get('channel') || 'stable').toLowerCase();
-    versionPrefixTextbox.value = params.get('targetVersion') || '';
+    versionPrefixTextbox.value = params.get('version') || '';
+
+    onCheckUpdate();
 }
 
 async function onCheckUpdate() {
@@ -21,6 +23,15 @@ async function onCheckUpdate() {
 
     const type = <ConfigNameType>`${channelSelect.value}-${platformSelect.value}`;
     resultContainer.innerHTML = '';
+    checkUpdateButton.disabled = true;
+
+    let url = `./?platform=${platformSelect.value}&channel=${channelSelect.value}`;
+    versionPrefixTextbox.value = versionPrefixTextbox.value.trim();
+    if (versionPrefixTextbox.value) {
+        url += '&version=' + versionPrefixTextbox.value;
+    }
+
+    history.replaceState(null, '', url);
 
     let result: UpdateInfo | null = null;
     try {
