@@ -80,7 +80,7 @@ header {
             box-sizing: border-box;
         }
 
-            header ul li::after {
+            header ul li.selected::after {
                 background: #1967d2;
                 border-radius: 2px;
                 bottom: 0;
