@@ -1,9 +1,10 @@
 # Chrome Portable Downloader
+A trustless way to download specified Chrome version and run it as portable application with some limitation[^1].
 
-A trustless way to download specified Chrome version from specified channel and run it as portable application with some limitation*.
+![Chrome 85 portable](https://user-images.githubusercontent.com/442046/140638430-0373d689-f41c-4acc-bc98-16385a772517.png)
 
 ### 1. Download Chrome installer from selected channel
-Click at **Chrome icon** to download Chrome from selected channel
+Click at **Chrome icon** to download Chrome installer file from Google server. You may specify version to "Version Prefix" textbox before click check update.
 
 - <strong>Stable Channel</strong> updates every 4 weeks.<br/> 
 <a href="https://soul-master.github.io/ChromePortableDownloader/?platform=win64&channel=stable"><img src="./images/chrome-logo.svg" width="48" height="48" alt="Chrome Stable Icon" /></a><br/> 
@@ -14,7 +15,8 @@ Click at **Chrome icon** to download Chrome from selected channel
 - <strong>Canary Channel</strong> updates daily. This build has not been tested or used, it's released as soon as it's built.<br/>
 <a href="https://soul-master.github.io/ChromePortableDownloader/?platform=win64&channel=canary"><img src="./images/chrome-canary-logo.svg" width="48" height="48" alt="Chrome Canary Icon" /></a><br/>
 
-For more info, please read at [Chrome Release Channels](https://www.chromium.org/getting-involved/dev-channel).
+Or you may download Chrome installer manually via the following page.<br/>
+https://soul-master.github.io/ChromePortableDownloader/
 
 ### 2. Open Chrome installer with [7-zip](https://www.7-zip.org/)
 ![Open Chrome installer with 7-zip](https://user-images.githubusercontent.com/442046/140624508-f268599c-d27e-4e54-bb2e-a73a390e96e9.png)
@@ -30,11 +32,6 @@ For this example, I extracted and renamed to "Chrome93" folder
 Please make sure that there is no other instance of Chrome.
 ![image](https://user-images.githubusercontent.com/442046/140624743-8dba877c-3083-46ca-9efc-e9a1b45ceeea.png)
 
-
-
-\**With official Chrome launcher, you can open only one version of Chrome at the same time (including other portable Chrome application). It means you need to close all Chrome instances before open Chrome portable application.<br/><br/>
-If this limitation doesn't work for you, please use custom launcher instead. But it also come with their our risk because you need to open application from unknown developer or sign by small company.*
-
 ## How to verify downloaded file
 - View "Digital Signatures" tab of file properties<br/>
 ![Digital Signatures tab in file properties](https://user-images.githubusercontent.com/442046/140624904-515b91e1-00d1-4a8a-8b35-84aba139ae0c.png)
@@ -46,8 +43,17 @@ If this limitation doesn't work for you, please use custom launcher instead. But
 https://omahaproxy.appspot.com/<br/>
 https://chromereleases.googleblog.com/search/label/Desktop%20Update
 
-## How to download old stable version
-Enter version prefix before click download in the following page.<br/>
-https://soul-master.github.io/ChromePortableDownloader/
+## FAQ
 
+#### Can I install Chrome with this installer?
+Yes. But, this installer doesn't include auto update feature. It means you need to manually install Chrome to update version.
+![Cannot update Chrome](https://user-images.githubusercontent.com/442046/140638104-a7b151e8-fab6-44ab-99c5-09fc59c9bbdd.png)
 
+For ended user, please install Chrome with auto update feature via one of the following links.<br/>
+Stable channel https://www.google.com/chrome/?standalone=1<br/>
+Beta channel https://www.google.com/chrome/beta/?standalone=1<br/>
+Dev channel https://www.google.com/chrome/dev/?standalone=1<br/>
+Canary channel https://www.google.com/chrome/canary/?standalone=1<br/>
+
+[^1]: With official Chrome launcher, you can open only one version of Chrome at the same time (including other portable Chrome application). It means you need to close all Chrome instances before open Chrome portable application.<br/><br/>
+If this limitation doesn't work for you, please use custom launcher instead. But it also come with their our risk because you need to open application from unknown developer or sign by small company.
