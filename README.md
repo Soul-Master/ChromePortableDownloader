@@ -1,5 +1,5 @@
 # Chrome Portable Downloader
-A trustless way to download specified Chrome version and run it as portable application with some limitation[^1].
+The easiest way to find standalone Google installer from official Google server and run it as portable application [^1].
 
 ![Chrome 85 portable](https://user-images.githubusercontent.com/442046/140638430-0373d689-f41c-4acc-bc98-16385a772517.png)
 
