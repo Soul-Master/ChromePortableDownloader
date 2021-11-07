@@ -46,10 +46,19 @@ chrome.exe --user-data-dir="./PortableProfile"
 
 ## FAQ
 
-#### How to manually check release date and version number?
+#### How to manually check release version?
 
 * https://omahaproxy.appspot.com/<br/>
 * https://chromereleases.googleblog.com/search/label/Desktop%20Update
+
+#### How to find Chrome features for specified version?
+
+https://www.chromestatus.com/roadmap
+
+#### How to turn-off some features?
+
+* [Chrome Flags for Tooling](https://github.com/GoogleChrome/chrome-launcher/blob/master/docs/chrome-flags-for-tools.md)
+* [List of all Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches/)
 
 #### Can I install Chrome with this installer?
 
@@ -66,10 +75,3 @@ Canary channel https://www.google.com/chrome/canary/?standalone=1<br/>
 ### Can I create portable Chrome from regular installer?
 
 Yes. However, there is no straightforward way to extract Chrome folder from regular installer. You need to install it before copy Chrome folder.
-
-## Resources
-
-* [Chrome Roadmap](https://www.chromestatus.com/features/schedule)
-* [Chrome Release Schedule](https://chromiumdash.appspot.com/schedule)
-* [Chrome Flags for Tooling](https://github.com/GoogleChrome/chrome-launcher/blob/master/docs/chrome-flags-for-tools.md)
-* [List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches/)
