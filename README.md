@@ -1,10 +1,12 @@
 # Chrome Portable Downloader
+
 The easiest way to find specified version of Chrome installer from Google update server and run it as a portable application.
 
 ![Open multiple versions of Chrome at the same time](https://user-images.githubusercontent.com/442046/140650149-77b4eaec-4b04-4d92-98cc-98da45d75b03.png)
 
 ### 1. Download Chrome installer from selected channel
-Click at **Chrome icon** to download Chrome installer file from Google server. You may specify version to "Version Prefix" textbox before click check update.
+
+Click at **Chrome icon** to download Chrome installer file from Google update server. Please note, you can specify version of Chrome with this tool.
 
 - <strong>Stable Channel</strong> updates every 4 weeks.<br/> 
 <a href="https://soul-master.github.io/ChromePortableDownloader/?platform=win64&channel=stable"><img src="./images/chrome-logo.svg" width="48" height="48" alt="Chrome Stable Icon" /></a><br/> 
@@ -19,12 +21,15 @@ Or you may download Chrome installer manually via the following page.<br/>
 https://soul-master.github.io/ChromePortableDownloader/
 
 ### 2. Open Chrome installer with [7-zip](https://www.7-zip.org/)
+
 ![Open Chrome installer with 7-zip](https://user-images.githubusercontent.com/442046/140624508-f268599c-d27e-4e54-bb2e-a73a390e96e9.png)
 
 ### 3. Open "chrome.7z" file inside Chrome installer
+
 ![Open chrome.7z inside Chrome installer](https://user-images.githubusercontent.com/442046/140624630-213cb9fd-77ae-46ba-8642-3420244c31d5.png)
 
 ### 4. Copy/Extract "chrome-bin" folder
+
 For this example, I extracted and renamed to "Chrome93" folder
 ![Extract chrome-bin folder to Chrome93](https://user-images.githubusercontent.com/442046/140624677-5f12f887-7ad6-4852-a62b-030f782ba798.png)
 
@@ -41,11 +46,13 @@ chrome.exe --user-data-dir="./PortableProfile"
 
 ## FAQ
 
-#### How to manually check latest version
-https://omahaproxy.appspot.com/<br/>
-https://chromereleases.googleblog.com/search/label/Desktop%20Update
+#### How to manually check release date and version number?
+
+* https://omahaproxy.appspot.com/<br/>
+* https://chromereleases.googleblog.com/search/label/Desktop%20Update
 
 #### Can I install Chrome with this installer?
+
 Yes. But, this installer doesn't include auto update feature. It means you need to manually install Chrome to update version.
 ![Cannot update Chrome](https://user-images.githubusercontent.com/442046/140638104-a7b151e8-fab6-44ab-99c5-09fc59c9bbdd.png)
 
@@ -57,6 +64,7 @@ Dev channel https://www.google.com/chrome/dev/?standalone=1<br/>
 Canary channel https://www.google.com/chrome/canary/?standalone=1<br/>
 
 ### Can I create portable Chrome from regular installer?
+
 Yes. However, there is no straightforward way to extract Chrome folder from regular installer. You need to install it before copy Chrome folder.
 
 ## Resources
