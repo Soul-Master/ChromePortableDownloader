@@ -32,23 +32,18 @@ For this example, I extracted and renamed to "Chrome93" folder
 
 - If you want to open only one version, you can open Chrome via **"chrome.exe"** directly. It should open [user profile](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/user_data_dir.md) from default folder.
 
-- To open multiple versions at the same time, you need to open Chrome with [user profile](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/user_data_dir.md) argument.
+- To open multiple versions at the same time, you need to open Chrome with different [profile folder](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/user_data_dir.md) like the following command.
 ```bat
 chrome.exe --user-data-dir="./PortableProfile"
 ```
-
-## How to verify downloaded file
-- View "Digital Signatures" tab of file properties<br/>
-![Digital Signatures tab in file properties](https://user-images.githubusercontent.com/442046/140624904-515b91e1-00d1-4a8a-8b35-84aba139ae0c.png)
-
-- Download [Sigcheck](https://docs.microsoft.com/en-us/sysinternals/downloads/sigcheck) from Microsoft to check file signature<br/>
-![Sigcheck result](https://user-images.githubusercontent.com/442046/140624949-a0e950ed-66d1-4861-babf-e349cf5635b4.png)
-
-## How to manually check latest version
-https://omahaproxy.appspot.com/<br/>
-https://chromereleases.googleblog.com/search/label/Desktop%20Update
+ You may need create shortcut and put additional argument like this.<br/>
+![Chrome shortcut](https://user-images.githubusercontent.com/442046/140650923-62ecc9e8-f4d1-4144-ba0b-5af47990f340.png)
 
 ## FAQ
+
+#### How to manually check latest version
+https://omahaproxy.appspot.com/<br/>
+https://chromereleases.googleblog.com/search/label/Desktop%20Update
 
 #### Can I install Chrome with this installer?
 Yes. But, this installer doesn't include auto update feature. It means you need to manually install Chrome to update version.
@@ -63,3 +58,10 @@ Canary channel https://www.google.com/chrome/canary/?standalone=1<br/>
 
 ### Can I create portable Chrome from regular installer?
 Yes. However, there is no straightforward way to extract Chrome folder from regular installer. You need to install it before copy Chrome folder.
+
+## Resources
+
+* [Chrome Roadmap](https://www.chromestatus.com/features/schedule)
+* [Chrome Release Schedule](https://chromiumdash.appspot.com/schedule)
+* [Chrome Flags for Tooling](https://github.com/GoogleChrome/chrome-launcher/blob/master/docs/chrome-flags-for-tools.md)
+* [List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches/)
