@@ -1,7 +1,7 @@
 # Chrome Portable Downloader
-The easiest way to find standalone Google installer from official Google server and run it as portable application [^1].
+The easiest way to find specified version of Chrome installer from Google update server and run it as a portable application.
 
-![Chrome 85 portable](https://user-images.githubusercontent.com/442046/140638430-0373d689-f41c-4acc-bc98-16385a772517.png)
+![Open multiple versions of Chrome at the same time](https://user-images.githubusercontent.com/442046/140650149-77b4eaec-4b04-4d92-98cc-98da45d75b03.png)
 
 ### 1. Download Chrome installer from selected channel
 Click at **Chrome icon** to download Chrome installer file from Google server. You may specify version to "Version Prefix" textbox before click check update.
@@ -28,9 +28,14 @@ https://soul-master.github.io/ChromePortableDownloader/
 For this example, I extracted and renamed to "Chrome93" folder
 ![Extract chrome-bin folder to Chrome93](https://user-images.githubusercontent.com/442046/140624677-5f12f887-7ad6-4852-a62b-030f782ba798.png)
 
-### 5. Open Chrome from "chrome.exe" application
-Please make sure that there is no other instance of Chrome.
-![image](https://user-images.githubusercontent.com/442046/140624743-8dba877c-3083-46ca-9efc-e9a1b45ceeea.png)
+### 5. Open Chrome as portable application
+
+- If you want to open only one version, you can open Chrome via **"chrome.exe"** directly. It should open [user profile](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/user_data_dir.md) from default folder.
+
+- To open multiple versions at the same time, you need to open Chrome with [user profile](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/user_data_dir.md) argument.
+```bat
+chrome.exe --user-data-dir="./PortableProfile"
+```
 
 ## How to verify downloaded file
 - View "Digital Signatures" tab of file properties<br/>
@@ -49,7 +54,8 @@ https://chromereleases.googleblog.com/search/label/Desktop%20Update
 Yes. But, this installer doesn't include auto update feature. It means you need to manually install Chrome to update version.
 ![Cannot update Chrome](https://user-images.githubusercontent.com/442046/140638104-a7b151e8-fab6-44ab-99c5-09fc59c9bbdd.png)
 
-For ended user, please install Chrome with auto update feature via one of the following links.<br/>
+For ended user, please install Chrome with auto update feature via one of the following links.
+
 Stable channel https://www.google.com/chrome/?standalone=1<br/>
 Beta channel https://www.google.com/chrome/beta/?standalone=1<br/>
 Dev channel https://www.google.com/chrome/dev/?standalone=1<br/>
@@ -57,6 +63,3 @@ Canary channel https://www.google.com/chrome/canary/?standalone=1<br/>
 
 ### Can I create portable Chrome from regular installer?
 Yes. However, there is no straightforward way to extract Chrome folder from regular installer. You need to install it before copy Chrome folder.
-
-[^1]: With official Chrome launcher, you can open only one version of Chrome at the same time (including other portable Chrome application). It means you need to close all Chrome instances before open Chrome portable application.<br/><br/>
-If this limitation doesn't work for you, please use custom launcher instead. But it also come with their our risk because you need to open application from unknown developer or sign by small company.
