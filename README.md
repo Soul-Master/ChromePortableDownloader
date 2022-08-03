@@ -4,7 +4,7 @@ The easiest way to find specified version of Chrome installer from Google update
 
 ![Open multiple versions of Chrome at the same time](https://user-images.githubusercontent.com/442046/140650149-77b4eaec-4b04-4d92-98cc-98da45d75b03.png)
 
-### 1. Download Chrome installer from selected channel
+### 1. Download Chrome installer from selected channel ([What are Chrome release channels?](https://www.youtube.com/watch?v=WL1guL5n9PU))
 
 Click at **Chrome icon** to download Chrome installer file from Google update server. Please note, you can specify version of Chrome with this tool.
 
